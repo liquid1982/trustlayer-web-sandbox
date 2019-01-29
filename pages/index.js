@@ -8,7 +8,7 @@ const Heading = styled.div`
 `;
 
 const StyledButton = styled(Button)`
-  color: yellow;
+  color: white;
 `;
 
 export default () => (
