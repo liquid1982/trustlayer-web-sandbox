@@ -1,24 +1,19 @@
-import styled from "styled-components";
-import { Button } from "antd";
-import { DatePicker } from "antd";
+import { Modal, Button, Row, Col } from 'antd';
+import styled from 'styled-components';
 
-const Heading = styled.div`
-  color: red;
-  padding: 20px;
-`;
-
-const StyledButton = styled(Button)`
-  color: white;
-`;
-
-export default () => (
-  <div>
-    <Heading>
-      <p>Hello World</p>
-      <p>
-        <StyledButton type="primary">Please click!</StyledButton>
-      </p>
-      <DatePicker />
-    </Heading>
-  </div>
+const Page = () => (
+  <Row>
+    <Col lg={{ span: 22, offset: 1 }}>
+      <p>Hello World!</p>
+      <Button type="primary">Please Click here!</Button>
+    </Col>
+  </Row>
 );
+
+Page.getInitialProps = () => {
+  return {
+    title: 'TrustLayer Web Sandbox'
+  }
+}
+
+export default Page;

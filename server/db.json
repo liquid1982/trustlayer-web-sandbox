@@ -1,0 +1,15 @@
+{
+  "organizations": [
+    { "id": 1, "name": "TrustLayer, Inc." }
+  ],
+  "users": [
+    { "id": 1, "organization_id": 1, "name": "Vincenzo" },
+    { "id": 2, "organization_id": 1, "name": "Francesco" }
+  ],
+  "third_parties": [
+    { "id": 1, "organization_id": 1, "name": "Acme Plumbing, Inc." }
+  ],
+  "document_requests": [
+    { "id": 1, "organization_id": 1, "third_party_id": 1, "user_id": 2 }
+  ]
+}
